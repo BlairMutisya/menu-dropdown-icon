@@ -1,0 +1,50 @@
+ul {
+    list-style-type: none;
+    height: 50px;
+}
+
+.Blair {
+   margin-top: 5px; 
+   height: 10px;
+   width: 50px;
+   border-radius: 20% / 90%;
+   background-color: red;
+   transition: 1s;
+   position: relative;
+}
+
+ul:hover li:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+ul:hover li:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+ul:hover li:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+/* Dropdown menu styles */
+#dropdownMenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjust to position the dropdown below the button */
+    left: -300px; /* Initially positioned off-screen */
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border: 1px solid #ccc;
+    width: 200px;
+    transition: left 0.3s ease; /* Animation for sliding effect */
+}
+
+#dropdownMenu p {
+    margin: 0;
+    padding: 8px 0;
+}
+
+#dropdownMenu.show {
+    left: 0; /* Slide in from the left */
+}
